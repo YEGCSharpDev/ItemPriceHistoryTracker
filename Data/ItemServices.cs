@@ -27,7 +27,7 @@ namespace ItemPriceHistoryTracker.Data
             }
             return item;
         }
-        public async Task<Item> UpdateProductAsync(Item item)
+        public async Task<Item> UpdateItemAsync(Item item)
         {
             try
             {

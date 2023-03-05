@@ -18,10 +18,14 @@
     },
     "Docker": {
       "commandName": "Docker",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
       "publishAllPorts": true,
-      "useSSL": true
+      "useSSL": false,
+      "environmentVariables": {
+        "ASPNETCORE_URLS": "http://+:58260"
+      },
+      "httpPort": 58260
     }
   },
   "iisSettings": {
