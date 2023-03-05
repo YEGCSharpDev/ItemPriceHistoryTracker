@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TRYfBO4SacuBF+KLjWo24gghorNhIxcVR5asiz61JotgqxVKpk3Pav9sdXuk9+23nlgdbBSZ4VnUElOCXziOgQ==",
+  "dgSpecHash": "cT9wnOT0SSuErHe08PavWER8UWgMt9thRBEzKKAeBce3ou9uwV89dnjVVE6AAJjzL5Zm23kxYPx2XH1STtrIrQ==",
   "success": true,
-  "projectFilePath": "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker.csproj",
+  "projectFilePath": "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shnkr\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\shnkr\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.3\\microsoft.data.sqlite.core.7.0.3.nupkg.sha512",

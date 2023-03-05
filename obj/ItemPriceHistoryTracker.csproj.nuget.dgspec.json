@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker.csproj": {}
+    "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker.csproj": {}
   },
   "projects": {
-    "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker.csproj": {
+    "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker.csproj",
+        "projectUniqueName": "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker.csproj",
         "projectName": "ItemPriceHistoryTracker",
-        "projectPath": "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker.csproj",
+        "projectPath": "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker.csproj",
         "packagesPath": "C:\\Users\\shnkr\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\obj\\",
+        "outputPath": "D:\\GIT\\ItemPriceTracker\\ItemPriceHistoryTracker\\ItemPriceHistoryTracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shnkr\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,7 @@
 using ItemPriceHistoryTracker.Data;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddDbContext<ItemDbContext>(options =>
+{
+    options.UseSqlite("Data Source = Items.db");
+});
+builder.Services.AddScoped<ItemServices>();
 
 var app = builder.Build();
 
