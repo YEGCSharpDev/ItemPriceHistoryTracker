@@ -15,6 +15,8 @@
                     <th>UnitOfMeaure</th>
                     <th>Quantity</th>
                     <th>Description</th>
+                    <th>BillDate</th>
+                    <th>LastUpdated</th>
                     <th>Delete Item</th>
                 </tr>
             </thead>
@@ -31,6 +33,8 @@
                             <td>@item.UnitOfMeaure</td>
                             <td>@item.Quantity</td>
                             <td>@item.Description</td>
+                            <td>@item.Created</td>
+                            <td>@item.Updated</td>
                             <td><button class="btn btn-danger" @onclick="(() => DeleteItem(item))">Delete</button></td>
                         </tr>
                     }
@@ -77,6 +81,12 @@
                     <input type="text" id="Description" class="form-control" @bind="@NewItem.Description" />
                 </div>
 
+                <div class="form-group">
+                    <label for="BillDate">Bill Date</label>
+                    <input type="date" id="BillDate" class="form-control" @bind="@NewItem.Created" />
+                </div>
+
+
                 <div class="text-center p-3 mb-3">
                     <button class="btn btn-info" @onclick="AddNewItem"> Add Item</button>
                 </div>
@@ -112,6 +122,10 @@
                 <div class="form-group">
                     <label for="Description">Description</label>
                     <input type="text" id="Description" class="form-control" @bind="@UpdateItem.Description" />
+                </div>
+                <div class="form-group">
+                    <label for="BillDate">Bill Date</label>
+                    <input type="date" id="BillDate" class="form-control" @bind="@UpdateItem.Created" />
                 </div>
 
                 <div class="text-center p-3 mb-3">

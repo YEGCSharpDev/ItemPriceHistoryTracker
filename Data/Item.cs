@@ -9,8 +9,8 @@
         public string UnitOfMeaure { get; set; }
         public double Quantity { get; set; }
         public string Description { get; set; }
-        public string? Created { get; set; }
-        public string? Updated { get; set; } = (DateTime.Now).ToString();
+        public DateTime? Created { get; set; }
+        public DateTime? Updated { get; set; } = (DateTime.Now);
 
     }
 }
