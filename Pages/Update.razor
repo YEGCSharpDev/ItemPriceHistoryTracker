@@ -4,7 +4,20 @@
 @inject ItemServices service
 
 <div class="container">
+    <div class="bg-light m-2 justify-content-end">
+        <div class="p-3 mb-1 bg-primary text-white text-center">Fetch Items for Bill Date</div>
 
+        <EditForm Model="@BillDate">
+            <div class="form-group">
+                <label for="BillDate">Bill Date</label>
+                <input type="date" id="BillDate" class="form-control" @bind="@BillDate" />
+            </div>
+
+            <div class="text-center p-3 mb-3">
+                <button class="btn btn-info" @onclick="PseudoRefresh"> Fetch Items</button>
+            </div>
+        </EditForm>
+    </div>
     <div class="row bg-light">
         <table class="table table-bordered">
             <thead class="thead-dark">
@@ -98,7 +111,7 @@
 
     private async Task RefreshItems()
     {
-        Items = await service.GetItemsAsync();
+        Items = await service.GetSpecificItemsAsync(BillDate);
     }
 
     Item UpdateItem = new Item();
@@ -112,6 +125,13 @@
         await service.UpdateItemAsync(UpdateItem);
         await RefreshItems();
     }
+
+    private async Task PseudoRefresh()
+    {
+        await RefreshItems();
+    }
+
+    DateTime? BillDate = DateTime.Now;
 
 }
 
