@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace ItemPriceHistoryTracker.Data
 {
@@ -12,6 +13,13 @@ namespace ItemPriceHistoryTracker.Data
         public async Task<List<Item>> GetItemsAsync()
         {
             return await _db.Item.ToListAsync();
+        }
+        public async Task<List<Item>> GetSpecificItemsAsync(DateTime? billdate)
+        {
+            var formattedBillDate = billdate.HasValue ? billdate.Value : DateTime.MinValue;
+
+            var returnitems = _db.Item.Where(p => p.Created.HasValue && p.Created.Value == formattedBillDate);
+            return await returnitems.ToListAsync();
         }
 
         public async Task<Item> AddItemAsync(Item item)
